@@ -1,4 +1,4 @@
-import datetime
+from datetime import date
 import smtplib
 from email.mime.text import MIMEText as MT
 from email.mime.multipart import MIMEMultipart as MM
@@ -62,12 +62,16 @@ class EmailSender():
             text = myFile.readline()
             text = text.rstrip()
             infoFields = text.split(',')
-            if ( len(infoFields) == 4):
+            if ( len(infoFields) == 5):
+                fechaCumple = infoFields[4]
                 email = infoFields[3]
                 name = infoFields[0]
-                print(email)
+                
                 if mode == "birthday":
-                    self.sendHappyBirthdayEmail("Tu cumple", email, name)
+                    today = date.today()
+                    if fechaCumple == str(today):
+                        print("Enviando a: ", email)
+                        self.sendHappyBirthdayEmail("Tu cumple", email, name)
                 elif mode == "plainText":
                     self.server.sendmail(self.sender_email, email, self.plainTextMessage)
                 elif mode == "pdf":
@@ -79,7 +83,6 @@ class EmailSender():
                     pdf.output("test.pdf")
                     self.sendEmailWithPDF("Tu archivo",email, name)
                     
-                print("Email has been sent to: ", email)
         myFile.close()
         
        

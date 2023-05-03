@@ -1,9 +1,8 @@
-﻿Nombre,Apellido Paterno,Apellido Materno,Email
-Juan,Martinez,Buenrostro,jm.j@gmail.com
-Lorenzo,Hernandez,Perez,jm.j@gmail.com
-Gabriel,Lopez,Baltico,jm.j@gmail.com
-Marcelo,Gutierrez,Jerez,jm.j@gmail.com
-Sebastian,Jimenez,Fuentes,jm.j@gmail.com
-Greta,Aguilar,Calvillo,greta.aguilar.c@gmail.com
-Dante,Migoni,Leon,dantemigoni@hotmail.com
-Jeremias,Dos Santos,Jaramillo,jm.j@gmail.com
+﻿Nombre,Apellido Paterno,Apellido Materno,Email,FechaCumple
+Juan,Martinez,Buenrostro,jm.j@gmail.com,2023-05-09
+Lorenzo,Hernandez,Perez,jm.j@gmail.com,2023-05-09
+Gabriel,Lopez,Baltico,jm.j@gmail.com,2023-05-09
+Marcelo,Gutierrez,Jerez,jm.j@gmail.com,2023-05-09
+Sebastian,Jimenez,Fuentes,jm.j@gmail.com,2023-05-09
+Dante,Migoni,Leon,dantemigoni@hotmail.com,2023-05-02
+Jeremias,Dos Santos,Jaramillo,jm.j@gmail.com,2023-05-09
